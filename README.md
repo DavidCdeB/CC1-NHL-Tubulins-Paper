@@ -182,7 +182,10 @@ All_regions/
 
 
 ## CC1-Tubulin Lattice
- 
+
+To place CC1 or NHL28 on the convex side of the tubulin lattice, follow the [placement procedure in steps-to-reproduce-EMB-on-Tubulin-Lattice directory](steps-to-reproduce-EMB-on-Tubulin-Lattice/README.md). All scripts used in this procedure are available in the [steps-to-reproduce-EMB-on-Tubulin-Lattice directory](steps-to-reproduce-EMB-on-Tubulin-Lattice/).
+
+
 We performed a series of pulling runs 1-10 producing Fig. S7 shown in the S.I. This figure was produced using this script: [plot-3.py](CC1-Tubulin-Lattice/plot-3.py).
 
 Across the pulling runs, we went from run 7 to run 8 by extracting the last frame of run 7 like this:
