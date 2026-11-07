@@ -30,9 +30,7 @@ If you use this code or our methods in your research, please cite our paper:
 
 The relevant molecular dynamics trajectories necessary to reprduce the findings in this paper can be found here:
 
-[![DOI](https://zenodo.org/badge/DOI/xyz/zenodo.xyz.svg)](https://)
-
-<!-- https://doi.org/10.5281/zenodo.17338213 -->
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24039917.svg)](https://doi.org/10.5281/zenodo.24039917)
 
 
 
