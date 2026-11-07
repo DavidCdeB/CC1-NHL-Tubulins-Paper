@@ -1,0 +1,87 @@
+#01010110#01001001#01000001#01001101#01000100#01001101#01000001#01001001#01010110#
+#                                                                                #
+#            VIAMD — Visual Interactive Analysis of Molecular Dynamics           #
+#                                                                                #
+#                    github: https://github.com/scanberg/viamd                   #
+#                 manual: https://github.com/scanberg/viamd/wiki                 #
+#                    youtube playlist: https://bit.ly/4aRsPrh                    #
+#                                twitter: @VIAMD_                                #
+#                                                                                #
+#                If you use VIAMD in your research, please cite:                 #
+#   "VIAMD: a Software for Visual Interactive Analysis of Molecular Dynamics"    #
+#       Robin Skånberg, Ingrid Hotz, Anders Ynnerman, and Mathieu Linares        #
+#                 J. Chem. Inf. Model. 2023, 63, 23, 7382–7391                   #
+#                   https://doi.org/10.1021/acs.jcim.3c01033                     #
+#                                                                                #
+#01010110#01001001#01000001#01001101#01000100#01001101#01000001#01001001#01010110#
+
+
+
+[Files]
+MoleculeFile=./fold_a_b_cc1_2025_10_27_16_55_model_0.cif
+TrajectoryFile=
+CoarseGrained=0
+
+[Animation]
+Frame=0.000000
+Fps=10.000000
+Interpolation=2
+
+[RenderSettings]
+SsaoEnabled=1
+SsaoIntensity=6.000000
+SsaoRadius=6.000000
+DofEnabled=0
+DofFocusScale=10.000000
+
+[Camera]
+Position=16.718395,127.429581,79.254745
+Orientation=-0.310453,0.350898,0.563068,0.680768
+Distance=162.547028
+Mode=0
+
+[Representation]
+Name=chain-A
+Filter=chain({'A'})
+Enabled=1
+Type=4
+ColorMapping=7
+StaticColor=1.000000,1.000000,1.000000,1.000000
+Saturation=1.000000
+Param=1.000000,1.000000,1.000000,1.000000
+DynamicEval=0
+
+[Representation]
+Name=chain-B
+Filter=chain({'B'})
+Enabled=1
+Type=4
+ColorMapping=7
+StaticColor=1.000000,1.000000,1.000000,1.000000
+Saturation=1.000000
+Param=1.000000,1.000000,1.000000,1.000000
+DynamicEval=0
+
+[Representation]
+Name=chain-C
+Filter=chain({'C'})
+Enabled=1
+Type=4
+ColorMapping=0
+StaticColor=0.100893,0.617282,0.725869,1.000000
+Saturation=1.000000
+Param=1.000000,1.000000,1.000000,1.000000
+DynamicEval=0
+
+[Script]
+Text="""s1 = resname("ALA")[2:8];
+d1 = distance(10,30);
+a1 = angle(2,1,3) in resname("ALA");
+r = rdf(element('C'), element('H'), 10.0);
+v = sdf(s1, element('H'), 10.0);
+{lin,plan,iso} = shape_weights(all);"""
+
+[ShapeSpace]
+Filter=all
+MarkerSize=1.500000
+UseMass=1
