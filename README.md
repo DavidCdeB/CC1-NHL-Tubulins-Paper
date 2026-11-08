@@ -95,7 +95,7 @@ NHL28,  $\alpha$-tubulin and $\beta$-tubulin were run in AlphaFold Server (Alpha
 
 - [Predicted structure (.cif)](NHL28-Tubulin-Dimer/fold_a_b_emb_model_0.cif)
 
-Available files:
+Available files in the Zenodo repository:
 
 ```text
 NHL28-Tubulin-Dimer/
