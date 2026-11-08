@@ -1,7 +1,7 @@
-# Relevant scripts and all workflow instructions necessary to reproduce the results presented in _Two members of a conserved LEA_2-domain protein family direct root growth under salt stress_
+# Relevant scripts and all workflow instructions necessary to reproduce the computational results presented in _Two members of a conserved LEA_2-domain protein family direct root growth under salt stress_
 
 
-This repository hosts the relevant scripts and all workflow instructions necessary to reproduce the results presented here:
+This repository hosts the relevant scripts and all workflow instructions necessary to reproduce the computational results presented here:
 
 Title 
 - Two members of a conserved LEA_2-domain protein family direct root growth under salt stress 
